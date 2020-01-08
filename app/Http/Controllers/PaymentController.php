@@ -91,6 +91,14 @@ class PaymentController extends Controller
         return Redirect::to($paymentUrl);
         // return $paymentUrl;
     }
+         public function finish(Request $request)
+    {
+        $order_id=$request->get('order_id');
+         $status=$request->get('transaction_status');
+        // echo "Transaction order_id: " . $order_id ."Status : " . $status;
+         return view("transactionfinish");
+
+    }
 
     public function notifications(){
         $notif = new \Midtrans\Notification();

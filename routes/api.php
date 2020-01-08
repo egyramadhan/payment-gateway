@@ -18,4 +18,5 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 Route::get('/tes','PaymentController@index');
+Route::get('/finish','PaymentController@finish');
 // Route::post('/tes','PaymentController@index');
