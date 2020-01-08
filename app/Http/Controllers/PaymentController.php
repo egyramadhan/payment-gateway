@@ -57,7 +57,7 @@ class PaymentController extends Controller
         // return $params;
         $payload = [
             'transaction_details' => [
-                'order_id'      => 1234,
+                'order_id'      => 3456,
                 'gross_amount'  => 10000,
             ],
             'customer_details' => [
